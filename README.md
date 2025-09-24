@@ -5,13 +5,16 @@ It was created during my internship at **SIC4Change** with the goal of analyzing
 
 
 ## 🚀 Features  
+- Developed using **JavaScript** (Firebase Cloud Functions) and **Dart** (Flutter frontend).  
 - Upload text directly from the app or select files (`.txt`, `.pdf`).  
 - Store uploaded files in **Firebase Storage**.  
-- Automatically extract text from documents (PDF parsing included).  
-- Cloud Functions save processed text in **Firestore** under `processedFiles`.  
+- Automatically extract and process text from uploaded documents (including PDF parsing).  
+- Cloud Functions:  
+  - **User management**: add user ID and creation date when a new user is created in Firestore.  
+  - **File processing**: extract text from uploaded `.txt` and `.pdf` files, then save them in the `processedFiles` collection.  
 - AI-based text analysis and correction using **Gemini**.  
-- Real-time updates with Riverpod state management.  
-- Cross-platform compatibility: Android, iOS, Web.  
+- Real-time updates with **Riverpod** state management.  
+- Cross-platform compatibility: **Android, iOS, Web**.  
 
 
 ## 📂 Project Structure  
